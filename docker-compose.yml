@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  nginx:
+    image: nginx
+    container_name: nginx_static
+    ports:
+      - 8099:80
+    volumes:
+      - ./server.conf:/etc/nginx/conf.d/server.conf
+      - ./static:/static/:ro
+    restart: unless-stopped
