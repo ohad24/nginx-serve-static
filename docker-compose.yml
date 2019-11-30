@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   nginx:
-    image: nginx
+    image: nginx/nginx:latest
     container_name: nginx_static
     ports:
       - 8099:80

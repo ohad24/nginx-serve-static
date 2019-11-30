@@ -5,3 +5,4 @@ steps:
 * create new static directory
 * update server name and ip address in server.conf file
 * run `docker-compose up -d`
+* server will run on port 8099 on host
